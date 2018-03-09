@@ -85,7 +85,7 @@ Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCre
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
-
+Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
 
 **CSS Styling**
 
@@ -98,7 +98,7 @@ Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCre
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
-
+Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
 
 **Testing**
 
