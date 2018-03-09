@@ -75,28 +75,33 @@ You can be on more than one team, just make sure there are enough duties for eve
 ### Teams
 
 **Wireframing & Layout**
+
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCreative.com)
 
 
 **HTML Structure**
+
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 
 
 **CSS Styling**
+
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCreative.com)
 
 
 **JavaScript Functionality**
+
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 
 
 **Testing**
+
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 
