@@ -86,7 +86,7 @@ Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCre
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
-
+Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com) 
 **CSS Styling**
 
 Name         | Slack @ | Link (optional)
@@ -104,7 +104,7 @@ Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammic
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
-
+Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com)
 
 ## Timelines & Due Dates
 
