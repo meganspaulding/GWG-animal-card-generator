@@ -64,6 +64,7 @@ This syntax creates a table in Markdown, all you have to do is edit/insert your 
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
+
 (your name)  | your @  | optional link
 
 You'll get it when you see how others have done it. If not, just ask someone. This list will determine who the contributors are for this project. Adding your name to a table is as easy as separating your info with the pipe character like this:
@@ -87,6 +88,7 @@ Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
 Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com) 
+
 **CSS Styling**
 
 Name         | Slack @ | Link (optional)
