@@ -19,7 +19,7 @@ The goal of this project is to put our new skills to work. This project should g
 
 
 ## Sign Up Instructions
-If you're new to GitHub, there can be a bit of a learning curve. I've found GitHub's Desktop to be very user-friendly for beginners. Here are some brief instructions adapted from fellow classmate @ChrisVNeal. I am still new to GitHub, so we are learning together! 
+If you're new to GitHub, there can be a bit of a learning curve. I've found GitHub's Desktop to be very user-friendly for beginners. Here are some brief instructions adapted from fellow classmate @ChrisVNeal. I am still new to GitHub, so we are learning together!
 
 1. Fork this repository **MeganSpauldingCreative/GWG-animal-card-generator** into your own GitHub account.
 
@@ -33,8 +33,8 @@ git remote add upstream https://github.com/GWGweb-projectgroup/practice-project.
 
 Whenever you want to pull our latest changes
 
-``` 
-git pull upstream master 
+```
+git pull upstream master
 ```
 
 4. Create a separate branch in your repository to begin the work, preferably using **yourname-dev** syntax, I would write
@@ -43,9 +43,9 @@ git pull upstream master
 git checkout -b chrisvneal-dev
 ```
 
-Make sure you follow the syntax used by other users for your sign up! 
+Make sure you follow the syntax used by other users for your sign up!
 
-5. Push your commits to your GitHub repository. Make sure you have filled in the comments section. 
+5. Push your commits to your GitHub repository. Make sure you have filled in the comments section.
 
 ```
 git push -u origin [name-of-your-branch]
@@ -58,7 +58,7 @@ The **-u** is to indicate that that branch will be an "upstream" branch: so that
 
 
 ## Sign Ups
-In order to sign up, follow the instructions above. Add your names to whichever team you would like to be a part of! Make sure to follow the format below! 
+In order to sign up, follow the instructions above. Add your names to whichever team you would like to be a part of! Make sure to follow the format below!
 
 This syntax creates a table in Markdown, all you have to do is edit/insert your information like so:
 
@@ -92,6 +92,7 @@ Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammic
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCreative.com)
+Kate Riley | @kate Katherine Riley
 
 
 **JavaScript Functionality**
@@ -108,7 +109,7 @@ Name         | Slack @ | Link (optional)
 
 ## Timelines & Due Dates
 
-Team Sign Ups are due March 12th, after which we will discuss our timeline for the project! 
+Team Sign Ups are due March 12th, after which we will discuss our timeline for the project!
 
 
 
