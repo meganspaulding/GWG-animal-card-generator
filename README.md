@@ -105,7 +105,7 @@ Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammic
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
-
+Kate Riley | @kate Katherine Riley
 
 ## Timelines & Due Dates
 
