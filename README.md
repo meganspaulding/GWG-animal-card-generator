@@ -64,6 +64,7 @@ This syntax creates a table in Markdown, all you have to do is edit/insert your 
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
+
 (your name)  | your @  | optional link
 
 You'll get it when you see how others have done it. If not, just ask someone. This list will determine who the contributors are for this project. Adding your name to a table is as easy as separating your info with the pipe character like this:
@@ -86,6 +87,7 @@ Megan Spaulding  | @Megan Spaulding  | [Portfolio](https://www.MeganSpauldingCre
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
+Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com) 
 
 **CSS Styling**
 
@@ -105,11 +107,28 @@ Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammic
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
+
 Kate Riley | @kate Katherine Riley
 
 ## Timelines & Due Dates
 
 Team Sign Ups are due March 12th, after which we will discuss our timeline for the project!
+=======
+
+Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com)
+
+Kasia | @Kasia M | 
+
+
+
+## Timelines & Due Dates
+
+Wireframe & Layout: March 15
+HTML Structure: March 20
+CSS Styling: March 23
+JavaScript Functionality: March 30
+Testing and Tweaking all aspects: April 4
+
 
 
 
