@@ -104,14 +104,12 @@ Name         | Slack @ | Link (optional)
 Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
 
 **Testing**
-
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
+Kate Riley  | @Kate  | n/a
+Dima Kroma | @Dima Kroma | [Portfolio](www.dimakroma.com)
+Kasia | @Kasia M | n/a
 
-Kate Riley | @kate Katherine Riley |
-Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com)
-
-Kasia | @Kasia M | 
 
 
 ## Timelines & Due Dates
