@@ -108,7 +108,7 @@ Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammic
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 
-Kate Riley | @kate Katherine Riley
+Kate Riley | @kate Katherine Riley |
 Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com)
 
 Kasia | @Kasia M | 
