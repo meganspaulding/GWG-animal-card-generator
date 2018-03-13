@@ -104,6 +104,7 @@ Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammic
 
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
+Kasia | @Kasia M | 
 
 
 ## Timelines & Due Dates
