@@ -109,24 +109,21 @@ Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 
 Kate Riley | @kate Katherine Riley
-
-## Timelines & Due Dates
-
-Team Sign Ups are due March 12th, after which we will discuss our timeline for the project!
-=======
-
 Dima Kroma        | @Dima Kroma    | [Portfolio] (www.dimakroma.com)
 
 Kasia | @Kasia M | 
 
 
-
 ## Timelines & Due Dates
 
 Wireframe & Layout: March 15
+
 HTML Structure: March 20
+
 CSS Styling: March 23
+
 JavaScript Functionality: March 30
+
 Testing and Tweaking all aspects: April 4
 
 
