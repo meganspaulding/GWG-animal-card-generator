@@ -104,6 +104,7 @@ Name         | Slack @ | Link (optional)
 Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
 
 **Testing**
+
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Kate Riley  | @Kate  | n/a
