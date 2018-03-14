@@ -1,5 +1,9 @@
 **WireFrame**
 
-[Imgur](https://i.imgur.com/yLde51K.png)
+A rough wireframe of what it will look like upon visiting the site.
 
-A rough layout of what it will look like upon loading the site.
+[Inital Website Load](https://i.imgur.com/yLde51K.png)
+
+A rough wireframe of what it will look like when there are no open modals.
+
+[Website View with no open Modals](https://i.imgur.com/htM02ie.png)
