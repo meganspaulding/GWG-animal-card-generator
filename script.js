@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function myFunction() {
     document.getElementById("frm1").submit();
 }
@@ -19,3 +20,6 @@ function readURL(input) {
             reader.readAsDataURL(input.files[0]);
         }
     }
+=======
+
+>>>>>>> 27350ea810d61a15750c07b1f44ecc951cae9789
