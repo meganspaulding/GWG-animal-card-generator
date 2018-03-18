@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+.card {
+    width: 15%;
+    box-shadow: 2px 6px 16px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+.card:hover {
+    box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
+}
+
+.title {
+  font-weight: bold;
+}
+=======
+
+>>>>>>> 27350ea810d61a15750c07b1f44ecc951cae9789
