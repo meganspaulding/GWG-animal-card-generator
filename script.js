@@ -1,10 +1,5 @@
-function myFunction() {
-    document.getElementById("frm1").submit();
-}
-
 //this code is for the image uploading
 document.getElementById('image').addEventListener('change', function () {
-    console.log('test')
     readURL(this);
 });
 
@@ -18,3 +13,7 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+document.getElementById('addCard').addEventListener('click', function () {
+    document.getElementById('cardMakeOverlay').style.display = 'block';
+})
