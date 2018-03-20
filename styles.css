@@ -1,8 +1,20 @@
 body {
     margin: 0px;
+    padding: 0px;
+    height: 100%;
 }
 
-header {
+
+
+/*
+|==================================================================
+|
+|     Header
+|
+|==================================================================
+*/
+
+h1 {
     text-align: center;
     padding: 50px;
     font-size: 30px;
@@ -11,50 +23,90 @@ header {
     margin-bottom: 10px;
 }
 
-label {
+/*
+|==================================================================
+|
+|     Page Aspects
+|
+|==================================================================
+*/
+
+
+/* Add Card Button */
+#add-card-btn{
+	display: block;
+	width: 340px;
+	margin: 10px;
+}
+
+#add-card-btn:hover {
+    box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
+}
+
+
+
+/*
+|==================================================================
+|
+|     New Card Modal
+|
+|==================================================================
+*/
+.new-card-modal {
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 2px 6px 16px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border-radius: 8px; 
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+    top: 5%;
+    left: 50%;
+    margin-left: -150px;
+}
+
+#disable-background{
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .6;
+    position: fixed;
+	z-index: 1;
+	top: 0;
+}
+
+.close{
+	position: fixed;
+	top: 30px;
+	width: 300px;
+	text-align: right;
+}
+
+.close:hover{
+	opacity: .3;
+}
+
+.visible{
+	display: none;
+}
+
+
+
+/*
+|==================================================================
+|
+|     Modal Inputs
+|
+|==================================================================
+*/
+.title {
     display: block;
 }
 
 select {
     display: block;
-}
-
-overlay {
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .3);
-}
-
-#addCard img {
-    width: 100%;
-    height: 100%;
-}
-
-#cardMakePanel {
-    text-align: left;
-    background-color: white;
-}
-
-.card {
-    width: 200px;
-    box-shadow: 2px 6px 16px 0 rgba(0,0,0,0.5);
-    transition: 0.3s;
-    padding: 10px;
-    border-radius: 5px; 
-    display: inline-block;
-    vertical-align: top;
-}
-
-.card:hover {
-    box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
-}
-
-.title {
-    font-weight: bold;
 }

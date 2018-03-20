@@ -83,5 +83,10 @@ function fillOutCard (cardInfo) {
 
 function newCard() {
     fillOutCard(temporaryCardInfo);
-    document.getElementById('cardMakeOverlay').style.display = 'none';
+    document.getElementById('cardMakePanel').style.display = 'none';
+}
+
+
+function myFunction() {
+    document.getElementById("frm1").submit();
 }

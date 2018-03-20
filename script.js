@@ -1,4 +1,44 @@
-//this code is for the image uploading
+// =====================================================================
+// 
+//      VARIABLES
+// 
+// =====================================================================
+
+var closeModal = $("#addCardClose");
+var addCardModal = $("#cardMakePanel");
+var disableBackground = $("#disable-background");
+var addCardBtn = $("#add-card-btn");
+
+// =====================================================================
+// 
+//      MODAL BEHAVIOR
+// 
+// =====================================================================
+
+// Closing Modal
+
+closeModal.click(function(){
+    addCardModal.toggleClass("visible");
+    disableBackground.toggleClass("visible");
+});
+
+// Add Card Button
+addCardBtn.click(function(){
+    addCardModal.toggleClass("visible");
+    disableBackground.toggleClass("visible");
+});
+
+// =====================================================================
+// 
+//      MODAL INPUT FUNCTIONALITY
+// 
+// =====================================================================
+
+
+// 
+//  Image Upload Display
+// 
+
 document.getElementById('image').addEventListener('change', function () {
     readURL(this);
 });
@@ -12,8 +52,9 @@ function readURL(input) {
             
         reader.readAsDataURL(input.files[0]);
     }
+
 }
 
 document.getElementById('addCard').addEventListener('click', function () {
     document.getElementById('cardMakeOverlay').style.display = 'block';
-})
+});
