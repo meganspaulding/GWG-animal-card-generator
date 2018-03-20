@@ -1,54 +1,10 @@
-body {
-    margin: 0px;
-}
-
-header {
-    text-align: center;
-    padding: 50px;
-    font-size: 30px;
-    background-color: #f2f2f2;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-}
-
-select {
-    display: block;
-}
-
-overlay {
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    display: none;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .3);
-}
-
-#addCard img {
-    width: 100%;
-    height: 100%;
-}
-
-#cardMakePanel {
-    text-align: left;
-    background-color: white;
-}
-
+<<<<<<< HEAD
 .card {
-    width: 200px;
+    width: 15%;
     box-shadow: 2px 6px 16px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     padding: 10px;
     border-radius: 5px; 
-    display: inline-block;
-    vertical-align: top;
 }
 
 .card:hover {
@@ -56,5 +12,8 @@ overlay {
 }
 
 .title {
-    font-weight: bold;
+  font-weight: bold;
 }
+=======
+
+>>>>>>> 27350ea810d61a15750c07b1f44ecc951cae9789

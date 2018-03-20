@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Enter animal information in the fields:</p>
+
+<form id="frm1" action="">
+  Animal Name: <input type="text" name="nickName"><br>
+  Scientific Name: <input type="text" name="sName"><br>
+  Average Length: <input type="text" name="avlength"><br>
+  Average Lifespan: <input type="text" name="lifeSpan"><br>
+  Habitat: <input type="text" name="habitat"><br>
+
+<p>Animal Group</p>
+
+<input type="radio" name="animalGroup" value="mammal"> Mammal<br>
+<input type="radio" name="animalGroup" value="invertebrate"> Invertebrate<br>
+<input type="radio" name="animalGroup" value="bird"> Bird </br>
+<input type="radio" name="animalGroup" value="amphibian"> Amphibian </br>
+<input type="radio" name="animalGroup" value="reptile"> Reptile </br>
+
+  <input type="button" onclick="myFunction()" value="Create Card">
+</form>
+
+<script language="javascript">
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
+
+
+</body>
+</html>
