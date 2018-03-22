@@ -17,13 +17,13 @@ var addCardBtn = $("#add-card-btn");
 
 // Closing Modal
 
-closeModal.click(function(){
+closeModal.click(function () {
     addCardModal.toggleClass("visible");
     disableBackground.toggleClass("visible");
 });
 
 // Add Card Button
-addCardBtn.click(function(){
+addCardBtn.click(function () {
     addCardModal.toggleClass("visible");
     disableBackground.toggleClass("visible");
 });
@@ -39,22 +39,17 @@ addCardBtn.click(function(){
 //  Image Upload Display
 // 
 
-document.getElementById('image').addEventListener('change', function () {
-    readURL(this);
-});
-
-function readURL(input) {
+function readURL() {
+    var input = this,
+        reader;
     if (input.files && input.files[0]) {
-        var reader = new FileReader();
+        reader = new FileReader();
         reader.onload = function (e) {
             document.getElementById('profile').src = e.target.result;
-        }
+        };
             
         reader.readAsDataURL(input.files[0]);
     }
-
 }
 
-document.getElementById('addCard').addEventListener('click', function () {
-    document.getElementById('cardMakeOverlay').style.display = 'block';
-});
+document.getElementById('image').addEventListener('change', readURL);
