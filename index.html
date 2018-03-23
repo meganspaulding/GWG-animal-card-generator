@@ -59,18 +59,33 @@
         <label class="title">Scientific Name: <input type="text" name="sName"></label>
         <label class="title">Average Length: <input type="text" name="avlength"></label>
         <label class="title">Average Lifespan: <input type="text" name="lifeSpan"></label>
-        <label class="title">Habitat: <input type="text" name="habitat"></label>
 
+       <h3>Habitat</h3>
+        <select name="habitat">
+            <option value="rainForest">Rain Forest</option>
+            <option value="forest">Forest</option>
+            <option value="desert">Desert</option>
+            <option value="coastal">Marine</option>
+            <option value="polar">Polar</option>
+            <option value="savanna">Savanna</option>
+            <option value="freshWater">Fresh Water</option>
+             <option value="farm">Farm</option>
+        </select>      
+      
+      
         <h3>Animal Group</h3>
-
-        <select>
-            <option>Mammal</option>
-            <option>Invertebrate</option>
-            <option>Bird</option>
-            <option>Amphibian</option>
-            <option>Reptile</option>
+        <select name="animalGroup">
+            <option value="mammal">Mammal</option>
+            <option value="invertebrate">Invertebrate</option>
+            <option value="bird">Bird</option>
+            <option value="amphibian">Amphibian</option>
+            <option  value="reptile">Reptile</option>
         </select>
 
+         <h3>Description</h3>
+         <textarea rows="4" cols="40" maxlength="150" name="description" placeholder="Describe the animal here...">
+         </textarea>   
+      
         <input type="button" onclick="newCard()" value="Create Card">
 
     </form>
