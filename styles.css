@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
+    background-color: #FAFAFA;
 }
 
 
@@ -14,13 +15,37 @@ body {
 |==================================================================
 */
 
+#title{
+    font-size: 1.2em; 
+    font-weight: 700;
+    font-family: 'Nunito', 'Futura', Helvetica, Arial, sans-serif;
+}
+
 h1 {
-    text-align: center;
-    padding: 50px;
-    font-size: 30px;
-    background-color: #f2f2f2;
-    font-weight: bold;
-    margin-bottom: 10px;
+    padding: 30px;
+    padding-left: 60px;
+    width: 100%;
+    margin-top: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+
+    /*Gradient Styling*/
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1e5799 0%, #23bfea 62%, #addfed 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #1e5799 0%,#23bfea 62%,#addfed 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #1e5799 0%,#23bfea 62%,#addfed 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#addfed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#add-card-top {
+    position: fixed;
+    z-index: 2;
+    top: 30px;
+    right: 60px;
+    margin-left: -150px;
+    font-size: 1.7em;
+    color: white;
 }
 
 /*
