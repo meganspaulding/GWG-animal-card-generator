@@ -40,12 +40,20 @@ h1 {
 
 #add-card-top {
     position: fixed;
-    z-index: 2;
-    top: 30px;
+    z-index: 1;
+    top: 20px;
     right: 60px;
     margin-left: -150px;
-    font-size: 1.7em;
+    font-size: 1.9em;
     color: white;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 6px 20px;
+}
+
+#add-card-top:hover {
+    cursor: pointer;
+    opacity: .75;
 }
 
 /*
@@ -65,7 +73,8 @@ h1 {
 }
 
 #add-card-btn:hover {
-    box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
+    opacity: .5;
+    cursor: pointer;
 }
 
 
@@ -106,17 +115,39 @@ h1 {
 
 .close{
 	position: fixed;
-	top: 30px;
+	top: 45px;
 	width: 300px;
 	text-align: right;
+    font-size: 1.5em;
+    color: white;
 }
 
 .close:hover{
-	opacity: .3;
+	opacity: .7;
+    cursor: pointer;
 }
 
 .visible{
 	display: none;
+}
+
+
+.new-card-modal h2{
+    font-family: nunito;
+    margin: -20px -20px 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 8px  8px 0 0;
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1e5799 0%, #23bfea 62%, #addfed 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #1e5799 0%,#23bfea 62%,#addfed 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #1e5799 0%,#23bfea 62%,#addfed 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#addfed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.new-card-modal h3{
+    font-family: nunito;
+    display: inline;
 }
 
 
@@ -129,9 +160,35 @@ h1 {
 |==================================================================
 */
 .title {
-    display: block;
+    font-family: 'Open Sans';
 }
 
 select {
     display: block;
 }
+
+#profile {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    float: left;
+
+
+}
+
+input[type="file"] {
+    display: block;
+    width: 175px;
+
+}
+
+.photo-uploader {
+    float: left;
+    margin: 7px 20px;
+}
+
+.img-upload-wrapper {
+    margin-bottom: 20px;
+}
+
