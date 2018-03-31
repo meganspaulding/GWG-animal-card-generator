@@ -199,6 +199,31 @@ select {
     display: block;
 }
 
+#profile {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    float: left;
+
+
+}
+
+input[type="file"] {
+    display: block;
+    width: 175px;
+
+}
+
+.photo-uploader {
+    float: left;
+    margin: 7px 20px;
+}
+
+.img-upload-wrapper {
+    margin-bottom: 20px;
+}
+
 /*
 |==================================================================
 |
