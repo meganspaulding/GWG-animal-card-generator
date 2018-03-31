@@ -6,35 +6,99 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
 </head>
 <body>
-<!-- 
+<!--
 =================================================
-| 
+|
 |
 | Animal Card Collection
 |
 |
-================================================= 
+=================================================
 -->
-<header id="title">
+  <header id="title">
 
-  <h1>Animal Card Collection</h1>
-  <div id="add-card-top">+</div>
-</header>
+    <h1>Animal Card Collection</h1>
+    <div id="add-card-top">+</div>
+  </header>
 
 <!-- ADD CARD BUTTON -->
-<div id="cardHolder">
-    <img src="https://i.imgur.com/PmpHQTs.png" id="add-card-btn">
-</div>
+  <div class = "row">
+    <div class = "column">
+      <div id="cardHolder">
+          <img src="https://i.imgur.com/PmpHQTs.png" id="add-card-btn">
+      </div>
+  </div>
 
-<!-- 
+
+<!--
 =================================================
-| 
+|
+|
+| COMPLETED CARD
+|
+|
+=================================================
+-->
+  <div class = "column">
+    <div id ="completedCard">
+      <!-- outer card box -->
+      <div class="background"></div>
+      <div class="cardFrame">
+        <section>
+          <div class = "cardHeader">
+            <h2>Name of Animal</h2> <!--to do: Add name -->
+        </section>
+          <!-- card image and text space -->
+          <div class = "cardBody">
+            <section>
+              <div class="cardImage">
+                <!--  box containing image of animal -->
+                <img class="cardImage" src="http://www.dimakroma.com/nophoto.gif" alt="animal-image" />
+              </div>
+            </section>
+            <!--  box containing list of facts and animal description -->
+            <div class="cardAnimalText">
+              <section>
+                <div class="animalFacts">
+                  <ul class=list style="list-style-type:none">
+                  <!-- animal's list items go here -->
+                    <li><span class="fact-label">Animal Name </span>: </li>
+                    <li><span class="fact-label">Scientific Name </span>: </li>
+                    <li><span class="fact-label">Average Length </span>: </li>
+                    <li><span class="fact-label">Average Lifespan </span>: </li>
+                  </ul>
+                </div>
+              </section>
+              <!-- card text with Habitat and Animal Group -->
+              <div class = "animalDetails">
+                <section>
+                  <h3>Habitat</h3>
+                  <p>Animal habitat placeholder here</p>
+                </section>
+                <section>
+                  <h3>Animal Group</h3>
+                  <p>Animal type placeholder here</p>
+                </section>
+                <section>
+                  <!-- Animal's description goes here -->
+                  <h3>Description</h3>
+                  <p>Animal description placeholder</p>
+                </section>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+=================================================
+|
 |
 | Add Card Modal
 |
 |
-================================================= 
+=================================================
 -->
+
 
 
 <!-- class card to be toggled -->
@@ -52,7 +116,7 @@
     <form id="frm1" action="">
 
          <!-- Adding picture -->
-        <div> 
+        <div>
             <h3>Photo:</h3>
             <input id="image" type="file" name="animal_image" placeholder="Photo" required="" capture>
         </div>
@@ -73,9 +137,9 @@
             <option value="savanna">Savanna</option>
             <option value="freshWater">Fresh Water</option>
              <option value="farm">Farm</option>
-        </select>      
-      
-      
+        </select>
+
+
         <h3>Animal Group</h3>
         <select name="animalGroup">
             <option value="mammal">Mammal</option>
@@ -87,8 +151,8 @@
 
          <h3>Description</h3>
          <textarea rows="4" cols="40" maxlength="150" name="description" placeholder="Describe the animal here...">
-         </textarea>   
-      
+         </textarea>
+
         <input type="button" onclick="newCard()" value="Create Card">
 
     </form>
