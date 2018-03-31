@@ -102,6 +102,7 @@ Kate Riley | @kate Katherine Riley
 Name         | Slack @ | Link (optional)
 -----        | -----   | -----
 Wyatt Salisbury  | @Wyatt Salisbury  | [Portfolio](https://github.com/YOURsammich)
+Megan Spaulding | | 
 
 **Testing**
 
