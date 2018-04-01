@@ -3,30 +3,51 @@ building our jQuery, and so that we can use to design our CSS Styles -->
 <html>
 
     <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     
     <body>
     
-        <div class="new-card-modal">
-            <h2>Example Card</h2>
-            
-            <img height="200" width="200" id="profile" src="http://www.dimakroma.com/nophoto.gif" alt="animal-image">
-            
-            <ul class="card-info">
-                <li><span>Animal Name:</span> Kangaroo</li>
-                <li><span>Scientific Name:</span> Kangaroo1</li>                
-                <li><span>Average Length:</span> Kangaroo2</li>
-                <li><span>Average Lifespan:</span> Kangaroo3</li>
-                <li><span>Habitat:</span> Kangaroo4</li>
-            </ul>
-            
-            <p class="card-description">
-                Kangaroo Kangaroo Kangaroo 
-                Kangaroo Kangaroo Kangaroo 
-            </p>
-            
+    <div class="completedCard">
+      <!-- outer card box -->
+      <header class="cardHeader">
+        <h2>Name of Animal</h2> <!--to do: Add name -->
+      </header>
+      <!-- card image and text space -->
+      <div class="cardBody">
+        <picture>
+          <!--  box containing image of animal -->
+          <img class="cardImage" src="http://www.dimakroma.com/nophoto.gif" alt="animal-image" />
+        </picture>
+        <!--  box containing list of facts and animal description -->
+        <div class="cardAnimalText">
+          <ul class="animalFacts">
+            <!-- animal's list items go here -->
+            <li><span class="fact-label">Scientific Name: </span></li>
+            <li><span class="fact-label">Average Length: </span></li>
+            <li><span class="fact-label">Average Lifespan: </span></li>
+          </ul>
+          <!-- card text with Habitat and Animal Group -->
+          <div class="animalDetails">
+            <section>
+              <h3>Habitat</h3>
+              <p>Animal habitat placeholder here</p>
+            </section>
+            <section>
+              <h3>Animal Group</h3>
+              <p>Animal type placeholder here</p>
+            </section>
+            <section>
+              <!-- Animal's description goes here -->
+              <h3>Description</h3>
+              <p>Animal description placeholder</p>
+            </section>
+          </div>
         </div>
+      </div>
+    </div>
     
     </body>
     

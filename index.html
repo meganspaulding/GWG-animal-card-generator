@@ -23,12 +23,8 @@
   </header>
 
 <!-- ADD CARD BUTTON -->
-  <div class = "row">
-    <div class = "column">
-      <div id="cardHolder">
-          <img src="https://i.imgur.com/PmpHQTs.png" id="add-card-btn">
-      </div>
-  </div>
+  <div id="cardHolder">
+    <img src="https://i.imgur.com/PmpHQTs.png" id="add-card-btn">
 
 
 <!--
@@ -40,55 +36,7 @@
 |
 =================================================
 -->
-  <div class = "column">
-    <div id ="completedCard">
-      <!-- outer card box -->
-      <div class="background"></div>
-      <div class="cardFrame">
-        <section>
-          <div class = "cardHeader">
-            <h2>Name of Animal</h2> <!--to do: Add name -->
-        </section>
-          <!-- card image and text space -->
-          <div class = "cardBody">
-            <section>
-              <div class="cardImage">
-                <!--  box containing image of animal -->
-                <img class="cardImage" src="http://www.dimakroma.com/nophoto.gif" alt="animal-image" />
-              </div>
-            </section>
-            <!--  box containing list of facts and animal description -->
-            <div class="cardAnimalText">
-              <section>
-                <div class="animalFacts">
-                  <ul class=list style="list-style-type:none">
-                  <!-- animal's list items go here -->
-                    <li><span class="fact-label">Animal Name </span>: </li>
-                    <li><span class="fact-label">Scientific Name </span>: </li>
-                    <li><span class="fact-label">Average Length </span>: </li>
-                    <li><span class="fact-label">Average Lifespan </span>: </li>
-                  </ul>
-                </div>
-              </section>
-              <!-- card text with Habitat and Animal Group -->
-              <div class = "animalDetails">
-                <section>
-                  <h3>Habitat</h3>
-                  <p>Animal habitat placeholder here</p>
-                </section>
-                <section>
-                  <h3>Animal Group</h3>
-                  <p>Animal type placeholder here</p>
-                </section>
-                <section>
-                  <!-- Animal's description goes here -->
-                  <h3>Description</h3>
-                  <p>Animal description placeholder</p>
-                </section>
-              </div>
-        </div>
-      </div>
-    </div>
+    
   </div>
 <!--
 =================================================
@@ -127,36 +75,35 @@
       </div>
         <!-- end adding picture-->
 
-        <label class="title" id="animal-name">Animal Name: <input type="text" name="nickName"></label>
-        <label class="title">Scientific Name: <input type="text" name="sName"></label>
-        <label class="title">Average Length: <input type="text" name="avlength"></label>
-        <label class="title">Average Lifespan: <input type="text" name="lifeSpan"></label>
+        <label class="title" id="animal-name">Animal Name: <input type="text" name="Animal Name"></label>
+        <label class="title">Scientific Name: <input type="text" name="Scientific Name"></label>
+        <label class="title">Average Length: <input type="text" name="Average Length"></label>
+        <label class="title">Average Lifespan: <input type="text" name="Average Lifespan"></label>
 
        <h3>Habitat</h3>
-        <select name="habitat">
-            <option value="rainForest">Rain Forest</option>
-            <option value="forest">Forest</option>
-            <option value="desert">Desert</option>
-            <option value="coastal">Marine</option>
-            <option value="polar">Polar</option>
-            <option value="savanna">Savanna</option>
-            <option value="freshWater">Fresh Water</option>
-             <option value="farm">Farm</option>
+        <select id="habitat">
+            <option value="Rain Forest">Rain Forest</option>
+            <option value="Forest">Forest</option>
+            <option value="Desert">Desert</option>
+            <option value="Marine">Marine</option>
+            <option value="Polar">Polar</option>
+            <option value="Savanna">Savanna</option>
+            <option value="Fresh Water">Fresh Water</option>
+             <option value="Farm">Farm</option>
         </select>
 
 
         <h3>Animal Group</h3>
-        <select name="animalGroup">
-            <option value="mammal">Mammal</option>
-            <option value="invertebrate">Invertebrate</option>
-            <option value="bird">Bird</option>
-            <option value="amphibian">Amphibian</option>
-            <option  value="reptile">Reptile</option>
+        <select id="animalGroup">
+            <option value="Mammal">Mammal</option>
+            <option value="Invertebrate">Invertebrate</option>
+            <option value="Bird">Bird</option>
+            <option value="Amphibian">Amphibian</option>
+            <option  value="Reptile">Reptile</option>
         </select>
 
          <h3>Description</h3>
-         <textarea rows="4" cols="40" maxlength="150" name="description" placeholder="Describe the animal here...">
-         </textarea>
+         <textarea rows="4" cols="40" maxlength="150" id="description" placeholder="Describe the animal here..."></textarea>
 
         <input type="button" onclick="newCard()" value="Create Card">
 

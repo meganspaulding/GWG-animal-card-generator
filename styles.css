@@ -40,7 +40,7 @@ h1 {
 }
 
 #add-card-top {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 20px;
     right: 60px;
@@ -66,12 +66,12 @@ h1 {
 */
 
 /* Add Card Button */
-#add-card-btn, #completedCard{
+#add-card-btn, .completedCard {
   box-sizing: border-box;
-  display: block;
-	width: 340px;
+  display: inline-block;
+  width: 340px;
   height: 535px;
-	margin: 10px;
+  margin: 10px;
 }
 
 #add-card-btn:hover {
@@ -79,7 +79,7 @@ h1 {
     cursor: pointer;
 }
 
-#add-card-btn:hover, #completedCard:hover {
+#add-card-btn:hover, .completedCard:hover {
     box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
 }
 
@@ -91,12 +91,7 @@ h1 {
 |==================================================================
 */
 
-
-.column {
-  float:left;
-}
-
-#completedCard {
+.completedCard {
   overflow: hidden;
   border-radius: 10px;
   border: 2px solid #E8E8E8;
@@ -130,9 +125,10 @@ h1 {
   /* h3 habitat color theme inserted here */
 }
 
-ul.list {
+.animalFacts {
   margin-bottom: 0;
   margin-top: 15px;
+  list-style-type: none;
 }
 
 li, p {
@@ -260,8 +256,8 @@ input[type="file"] {
     margin-bottom: 20px;
 }
 
-animal-name {
-  margin-top: 500px;
+#animal-name {
+  margin-top: 25px;
 }
 
 
