@@ -178,20 +178,23 @@ li {
 	height: 100%;
 	background-color: #000;
 	opacity: .6;
-    position: fixed;
+  position: fixed;
 	z-index: 1;
 	top: 0;
 }
 
 .close{
-	position: fixed;
-	top: 30px;
-	width: 300px;
-	text-align: right;
+  position: fixed;
+  top: 45px;
+  width: 300px;
+  text-align: right;
+  font-size: 1.5em;
+  color: white;
 }
 
 .close:hover{
 	opacity: .3;
+  cursor: pointer;
 }
 
 .visible{
