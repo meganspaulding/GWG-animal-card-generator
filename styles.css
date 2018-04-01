@@ -41,12 +41,20 @@ h1 {
 
 #add-card-top {
     position: fixed;
-    z-index: 2;
-    top: 30px;
+    z-index: 1;
+    top: 20px;
     right: 60px;
     margin-left: -150px;
-    font-size: 1.7em;
+    font-size: 1.9em;
     color: white;
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 6px 20px;
+}
+
+#add-card-top:hover {
+    cursor: pointer;
+    opacity: .75;
 }
 
 /*
@@ -66,15 +74,13 @@ h1 {
 	margin: 10px;
 }
 
-<<<<<<< HEAD
 #add-card-btn:hover {
-<<<<<<< HEAD
     opacity: .5;
     cursor: pointer;
-=======
+}
+
 #add-card-btn:hover, #completedCard:hover {
     box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
->>>>>>> 285d445790de590cacdd60a9ceeea30d94c927c2
 }
 
 /*
@@ -100,9 +106,7 @@ h1 {
   padding-bottom: 3px;
   padding-right: 10px;
   /* background theme inserted here */
-=======
-    box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
->>>>>>> parent of a397c09... updates
+  box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
 }
 
 .cardHeader h2 {
@@ -142,6 +146,8 @@ li {
   padding-bottom: 5px;
   padding-top: -30px;
 }
+
+
 
 /*
 |==================================================================
@@ -192,7 +198,23 @@ li {
 	display: none;
 }
 
+.new-card-modal h2{
+    font-family: nunito;
+    margin: -20px -20px 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 8px  8px 0 0;
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #1e5799 0%, #23bfea 62%, #addfed 96%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #1e5799 0%,#23bfea 62%,#addfed 96%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #1e5799 0%,#23bfea 62%,#addfed 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#addfed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 
+.new-card-modal h3{
+    font-family: nunito;
+    display: inline;
+}
 
 /*
 |==================================================================
@@ -208,14 +230,33 @@ li {
 select {
     display: block;
 }
-<<<<<<< HEAD
+
+#profile {
+    display: inline;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    float: left;
+
+
+}
+
+input[type="file"] {
+    display: block;
+    width: 175px;
+
+}
+
+.photo-uploader {
+    float: left;
+    margin: 7px 20px;
+}
 
 .img-upload-wrapper {
     margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
+
 /*
 |==================================================================
 |
@@ -363,6 +404,4 @@ color: #89672C;
 .animalDetails h3 {
   color: #5B769B;
 } */
->>>>>>> 285d445790de590cacdd60a9ceeea30d94c927c2
-=======
->>>>>>> parent of a397c09... updates
+
