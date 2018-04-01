@@ -4,6 +4,7 @@
   <title>Animal Card Generator</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 <!--
@@ -109,33 +110,24 @@
     <span id="addCardClose" class="close">&times;</span>
     <h2>New Card</h2>
 
-    <!-- a blank image placeholder -->
-    <img height="200" width="200" id="profile" src="http://www.dimakroma.com/nophoto.gif" alt="animal-image" />
-
-<<<<<<< HEAD
 
     <form id="frm1" action="">
-<<<<<<< HEAD
+
       <div class="img-upload-wrapper">
           <!-- a blank image placeholder -->
           <img id="profile" src="http://www.dimakroma.com/nophoto.gif" alt="animal-image" />
-          <div class="photo-uploader">
-=======
-         <!-- Adding picture -->
-        <div>
->>>>>>> 285d445790de590cacdd60a9ceeea30d94c927c2
-            <h3>Photo:</h3>
-=======
 
->>>>>>> parent of a397c09... updates
+
+
          <!-- Adding picture -->
         <div> 
             <h3>Photo:</h3>
             <input id="image" type="file" name="animal_image" placeholder="Photo" required="" capture>
         </div>
+      </div>
         <!-- end adding picture-->
 
-        <label class="title">Animal Name: <input type="text" name="nickName"></label>
+        <label class="title" id="animal-name">Animal Name: <input type="text" name="nickName"></label>
         <label class="title">Scientific Name: <input type="text" name="sName"></label>
         <label class="title">Average Length: <input type="text" name="avlength"></label>
         <label class="title">Average Lifespan: <input type="text" name="lifeSpan"></label>
