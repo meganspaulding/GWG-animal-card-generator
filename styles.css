@@ -228,6 +228,7 @@ li {
 */
 .title {
     display: block;
+    font-family: 'Open Sans';
 }
 
 select {
