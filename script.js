@@ -8,6 +8,7 @@ var closeModal = $("#addCardClose");
 var addCardModal = $("#cardMakePanel");
 var disableBackground = $("#disable-background");
 var addCardBtn = $("#add-card-btn");
+var addCardTopBtn = $('#add-card-top');
 
 // =====================================================================
 // 
@@ -25,6 +26,8 @@ closeModal.click(toggleCardModal);
 
 // Add Card Button
 addCardBtn.click(toggleCardModal);
+
+addCardTopBtn.click(toggleCardModal);
 
 // =====================================================================
 // 

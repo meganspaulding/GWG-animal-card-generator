@@ -25,7 +25,6 @@ body {
 h1 {
     padding: 30px;
     padding-left: 60px;
-    width: 100%;
     margin-top: 0;
     color: white;
     text-transform: uppercase;
@@ -272,7 +271,8 @@ input[type="file"] {
 /*  RAINFOREST THEME */
 
     /* TO BE INSERTED #completedCard */
-    /* color: #057275;
+    /* color: #057275;*/
+.RainForestTheme {
     background: rgba(153,207,209,1);
     background: -moz-linear-gradient(45deg, rgba(153,207,209,1) 0%, rgba(153,207,209,1) 14%, rgba(167,189,126,1) 60%, rgba(5,114,117,1) 100%);
     background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(153,207,209,1)), color-stop(14%, rgba(153,207,209,1)), color-stop(60%, rgba(167,189,126,1)), color-stop(100%, rgba(5,114,117,1)));
@@ -281,131 +281,131 @@ input[type="file"] {
     background: -ms-linear-gradient(45deg, rgba(153,207,209,1) 0%, rgba(153,207,209,1) 14%, rgba(167,189,126,1) 60%, rgba(5,114,117,1) 100%);
     background: linear-gradient(45deg, rgba(153,207,209,1) 0%, rgba(153,207,209,1) 14%, rgba(167,189,126,1) 60%, rgba(5,114,117,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cfd1', endColorstr='#057275', GradientType=1 );
+}
 
-
-    .animalDetails h3 {
-      color: #C02b75;
-    }  */
-
+.RainForestTheme h3 {
+    color: #C02b75;
+}
 
 /* DESERT THEME */
+.DesertTheme {
+    background: #5f2321;
+    background-image: background-image: background: -webkit-linear-gradient(bottom left, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background-image: background-image: background: -o-linear-gradient(bottom left, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background-image: background-image: background: linear-gradient(to top right, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background-image: background: -o-linear-gradient(bottom left, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background-image: background: linear-gradient(to top right, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background: -webkit-gradient(left bottom, right top, color-stop(35%, #5f2321), color-stop(43%, #5f2321), color-stop(59%, #d48d4e), color-stop(62%, #eaa156), color-stop(76%, #f7d265));
+    background: -webkit-linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background: -o-linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background: -ms-linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    background: linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f2321', endColorstr='#f7d265', GradientType=1 );
+}
 
-  /* background: #5f2321;
-  background-image: background-image: background: -webkit-linear-gradient(bottom left, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background-image: background-image: background: -o-linear-gradient(bottom left, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background-image: background-image: background: linear-gradient(to top right, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background-image: background: -o-linear-gradient(bottom left, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background-image: background: linear-gradient(to top right, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background: -webkit-gradient(left bottom, right top, color-stop(35%, #5f2321), color-stop(43%, #5f2321), color-stop(59%, #d48d4e), color-stop(62%, #eaa156), color-stop(76%, #f7d265));
-  background: -webkit-linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background: -o-linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background: -ms-linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  background: linear-gradient(45deg, #5f2321 35%, #5f2321 43%, #d48d4e 59%, #eaa156 62%, #f7d265 76%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f2321', endColorstr='#f7d265', GradientType=1 );
-
-.animalDetails h3 {
-color: #BA682A;
-} */
-
+.DesertTheme h3 {
+    color: #BA682A;
+}
 
 /*  FARM THEME */
+.FarmTheme {
+    background: #a1b712;
+    background-image: background: -webkit-linear-gradient(bottom left, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    background-image: background: -o-linear-gradient(bottom left, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    background-image: background: linear-gradient(to top right, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    background: -webkit-gradient(left bottom, right top, color-stop(15%, #a1b712), color-stop(35%, #8aac10), color-stop(48%, #7ba50e), color-stop(55%, #7ba50e), color-stop(59%, #87a815), color-stop(81%, #cab63e));
+    background: -webkit-linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    background: -o-linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    background: -ms-linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    background: linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1b712', endColorstr='#cab63e', GradientType=1 );
+}
 
-  /* background: #a1b712;
-  background-image: background: -webkit-linear-gradient(bottom left, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  background-image: background: -o-linear-gradient(bottom left, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  background-image: background: linear-gradient(to top right, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  background: -webkit-gradient(left bottom, right top, color-stop(15%, #a1b712), color-stop(35%, #8aac10), color-stop(48%, #7ba50e), color-stop(55%, #7ba50e), color-stop(59%, #87a815), color-stop(81%, #cab63e));
-  background: -webkit-linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  background: -o-linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  background: -ms-linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  background: linear-gradient(45deg, #a1b712 15%, #8aac10 35%, #7ba50e 48%, #7ba50e 55%, #87a815 59%, #cab63e 81%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1b712', endColorstr='#cab63e', GradientType=1 );
-
-.animalDetails h3 {
-color: #89672C;
-} */
-
+.FarmTheme h3 {
+    color: #89672C;
+}
 
 /* FOREST THEME */
+.ForestTheme {
+    background: #6a8c1f;
+    background-image: background: -webkit-linear-gradient(bottom left, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    background-image: background: -o-linear-gradient(bottom left, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    background-image: background: linear-gradient(to top right, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #6a8c1f), color-stop(24%, #6a8c1f), color-stop(46%, #bad262), color-stop(59%, #bad262), color-stop(61%, #bbcd63), color-stop(86%, #c58a74), color-stop(100%, #c58a74));
+    background: -webkit-linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    background: -o-linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    background: -ms-linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    background: linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8c1f', endColorstr='#c58a74', GradientType=1 );
+}
 
-/* background: #6a8c1f;
-   background-image: background: -webkit-linear-gradient(bottom left, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   background-image: background: -o-linear-gradient(bottom left, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   background-image: background: linear-gradient(to top right, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   background: -webkit-gradient(left bottom, right top, color-stop(0%, #6a8c1f), color-stop(24%, #6a8c1f), color-stop(46%, #bad262), color-stop(59%, #bad262), color-stop(61%, #bbcd63), color-stop(86%, #c58a74), color-stop(100%, #c58a74));
-   background: -webkit-linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   background: -o-linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   background: -ms-linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   background: linear-gradient(45deg, #6a8c1f 0%, #6a8c1f 24%, #bad262 46%, #bad262 59%, #bbcd63 61%, #c58a74 86%, #c58a74 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8c1f', endColorstr='#c58a74', GradientType=1 );
-
-.animalDetails h3 {
-  color: #BAD262;
-} */
-
+.ForestTheme h3 {
+    color: #BAD262;
+}
 
 /* FRESHWATER THEME */
+.FreshWaterTheme {
+    background: #72affe;
+    background: -moz-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #72affe), color-stop(15%, #72affe), color-stop(32%, #125cc3), color-stop(54%, #125cc3), color-stop(72%, #125cc3), color-stop(94%, #5dc0fc));
+    background: -webkit-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
+    background: -o-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
+    background: -ms-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
+    background: linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72affe', endColorstr='#5dc0fc', GradientType=1 );
+}
 
-  /* background: #72affe;
-  background: -moz-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #72affe), color-stop(15%, #72affe), color-stop(32%, #125cc3), color-stop(54%, #125cc3), color-stop(72%, #125cc3), color-stop(94%, #5dc0fc));
-  background: -webkit-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
-  background: -o-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
-  background: -ms-linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
-  background: linear-gradient(45deg, #72affe 0%, #72affe 15%, #125cc3 32%, #125cc3 54%, #125cc3 72%, #5dc0fc 94%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72affe', endColorstr='#5dc0fc', GradientType=1 );
-
-.animalDetails h3 {
+.FreshWaterTheme h3 {
     color: #D6A864;
-  } */
+}
 
+/* MARINE THEME */
+.MarineTheme {
+    background: #2e229e;
+    background: -moz-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #2e229e), color-stop(18%, #2e229e), color-stop(44%, #0e21ba), color-stop(61%, #10479e), color-stop(82%, #13767b), color-stop(100%, #13767b));
+    background: -webkit-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
+    background: -o-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
+    background: -ms-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
+    background: linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e229e', endColorstr='#13767b', GradientType=1 );
+}
 
-  /* MARINE THEME */
-
-  /* background: #2e229e;
-  background: -moz-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #2e229e), color-stop(18%, #2e229e), color-stop(44%, #0e21ba), color-stop(61%, #10479e), color-stop(82%, #13767b), color-stop(100%, #13767b));
-  background: -webkit-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
-  background: -o-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
-  background: -ms-linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
-  background: linear-gradient(45deg, #2e229e 0%, #2e229e 18%, #0e21ba 44%, #10479e 61%, #13767b 82%, #13767b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e229e', endColorstr='#13767b', GradientType=1 );
-
-.animalDetails h3 {
+.MarineTheme h3 {
     color: #F98267;
-  } */
-
+}
 
 /* POLAR THEME */
+.PolarTheme {
+    background: #2c79c1;
+    background: -moz-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #2c79c1), color-stop(18%, #2c79c1), color-stop(44%, #4b89c6), color-stop(61%, #9cbddd), color-stop(82%, #fffdf9), color-stop(100%, #fffdf9));
+    background: -webkit-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
+    background: -o-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
+    background: -ms-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
+    background: linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c79c1', endColorstr='#fffdf9', GradientType=1 );
+}
 
-  /* background: #2c79c1;
-  background: -moz-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #2c79c1), color-stop(18%, #2c79c1), color-stop(44%, #4b89c6), color-stop(61%, #9cbddd), color-stop(82%, #fffdf9), color-stop(100%, #fffdf9));
-  background: -webkit-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
-  background: -o-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
-  background: -ms-linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
-  background: linear-gradient(45deg, #2c79c1 0%, #2c79c1 18%, #4b89c6 44%, #9cbddd 61%, #fffdf9 82%, #fffdf9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c79c1', endColorstr='#fffdf9', GradientType=1 );
-
-.animalDetails h3 {
+.PolarTheme h3 {
     color: #E8E1D5;
-  } */
-
+}
 
 /* SAVANNAH THEME */
+.SavannaTheme {
+    background: #e49634;
+    background-image: background: -webkit-linear-gradient(bottom left, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    background-image: background: -o-linear-gradient(bottom left, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    background-image: background: linear-gradient(to top right, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #e49634), color-stop(18%, #e49634), color-stop(44%, #edb463), color-stop(61%, #f1c068), color-stop(82%, #f5ce6e), color-stop(100%, #f5ce6e));
+    background: -webkit-linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    background: -o-linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    background: -ms-linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    background: linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e49634', endColorstr='#f5ce6e', GradientType=1 );
+}
 
-  /* background: #e49634;
-  background-image: background: -webkit-linear-gradient(bottom left, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  background-image: background: -o-linear-gradient(bottom left, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  background-image: background: linear-gradient(to top right, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #e49634), color-stop(18%, #e49634), color-stop(44%, #edb463), color-stop(61%, #f1c068), color-stop(82%, #f5ce6e), color-stop(100%, #f5ce6e));
-  background: -webkit-linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  background: -o-linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  background: -ms-linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  background: linear-gradient(45deg, #e49634 0%, #e49634 18%, #edb463 44%, #f1c068 61%, #f5ce6e 82%, #f5ce6e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e49634', endColorstr='#f5ce6e', GradientType=1 );
-
-.animalDetails h3 {
-  color: #5B769B;
-} */
+.SavannaTheme h3 {
+    color: #5B769B;
+}
 
