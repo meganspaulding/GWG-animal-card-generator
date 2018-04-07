@@ -11,7 +11,5 @@
 * Hover effects such as cursors and opacity changes 
 
 # Phase Three: Website Functionality
-* Get Add Card Modal to funciton, creating a new animal card in the collection.
 * Enable "Edit" icon on cards
 * Enable "Delete" icon on cards
-* Enable header "+" button.
