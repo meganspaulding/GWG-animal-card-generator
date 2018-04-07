@@ -61,8 +61,13 @@ document.getElementById('image').addEventListener('change', readURL);
 // 
 // =====================================================================
 
+//style card moduel as the user hover overs habitats
+$('#habitat').change(function () {
+    addCardModal[0].className = 'new-card-modal ' + this.options[habitat.selectedIndex].value.replace(' ', '') + 'Theme';
+});
+
 //build basic HTML structure of card
-function buildCardHTML (cardInfo) {
+function buildCardHTML () {
   var container = document.createElement('div'),
       cardHeader = document.createElement('header'),
       animalName = document.createElement('h2'),
@@ -126,10 +131,11 @@ function getCardInfo () {
   for (let f = 0; f < listFacts.length; f++) {
     let inputValue = listFacts[f].getElementsByTagName('input')[0];
     if (inputValue.name == 'Animal Name') {
-      cardInfo.animalName = inputValue.value
+      cardInfo.animalName = inputValue.value;
     } else {
       cardInfo.facts.push([inputValue.name, inputValue.value]); 
     }
+    inputValue.value = '';
   }
   
   cardInfo.animalImage = animalImageSrc;
@@ -160,6 +166,10 @@ function fillOutCard (cardHTML, cardInfo) {
         detailLabel = document.createElement('h3'),
         info = document.createElement('p');
     
+    if (cardInfo.details[i][0] == 'Habitat') {
+        cardHTML.container.className += ' ' + cardInfo.details[i][1].replace(' ', '') + 'Theme';
+    }
+      
     detailLabel.textContent = cardInfo.details[i][0];
     info.textContent = cardInfo.details[i][1];
     
