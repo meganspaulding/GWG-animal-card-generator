@@ -283,7 +283,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cfd1', endColorstr='#057275', GradientType=1 );
 }
 
-.RainForestTheme h3 {
+.RainForestTheme .animalDetails h3 {
     color: #C02b75;
 }
 
@@ -303,7 +303,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f2321', endColorstr='#f7d265', GradientType=1 );
 }
 
-.DesertTheme h3 {
+.DesertTheme .animalDetails h3 {
     color: #BA682A;
 }
 
@@ -321,7 +321,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1b712', endColorstr='#cab63e', GradientType=1 );
 }
 
-.FarmTheme h3 {
+.FarmTheme .animalDetails h3 {
     color: #89672C;
 }
 
@@ -339,7 +339,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8c1f', endColorstr='#c58a74', GradientType=1 );
 }
 
-.ForestTheme h3 {
+.ForestTheme .animalDetails h3 {
     color: #BAD262;
 }
 
@@ -355,7 +355,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72affe', endColorstr='#5dc0fc', GradientType=1 );
 }
 
-.FreshWaterTheme h3 {
+.FreshWaterTheme .animalDetails h3 {
     color: #D6A864;
 }
 
@@ -371,7 +371,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e229e', endColorstr='#13767b', GradientType=1 );
 }
 
-.MarineTheme h3 {
+.MarineTheme .animalDetails h3 {
     color: #F98267;
 }
 
@@ -387,7 +387,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c79c1', endColorstr='#fffdf9', GradientType=1 );
 }
 
-.PolarTheme h3 {
+.PolarTheme .animalDetails h3 {
     color: #E8E1D5;
 }
 
@@ -405,7 +405,7 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e49634', endColorstr='#f5ce6e', GradientType=1 );
 }
 
-.SavannaTheme h3 {
+.SavannaTheme .animalDetails h3 {
     color: #5B769B;
 }
 
