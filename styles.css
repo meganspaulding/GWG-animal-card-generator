@@ -103,11 +103,27 @@ h1 {
   box-shadow: 4px 8px 18px 0 rgba(0,0,0,0.5);
 }
 
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cardHeader h2 {
   padding-top: 7px;
   font-size: 20px;
   font-family: 'Nunito', 'Futura', Helvetica, Arial, sans-serif;
+}
 
+.cardTools span {
+  font-family: Material Icons;
+  line-height: 60px;
+  margin-left: 10px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.completedCard:hover .cardTools span {
+  visibility: visible;
 }
 
 .cardImage {

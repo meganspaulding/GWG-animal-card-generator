@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Animal Card Generator</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material%20Icons" rel="stylesheet">
 </head>
 <body>
 <!--
@@ -77,11 +78,11 @@
 
         <label class="title" id="animal-name">Animal Name: <input type="text" name="Animal Name"></label>
         <label class="title">Scientific Name: <input type="text" name="Scientific Name"></label>
-        <label class="title">Average Length: <input type="text" name="Average Length"></label>
-        <label class="title">Average Lifespan: <input type="text" name="Average Lifespan"></label>
+        <label class="title">Average Length: <input type="number" name="Average Length"></label>
+        <label class="title">Average Lifespan: <input type="number" name="Average Lifespan"></label>
 
-       <h3>Habitat</h3>
-        <select id="habitat">
+        <h3>Habitat</h3>
+        <select id="habitat" name="Habitat">
             <option value="" disabled selected hidden>Select Habitat</option>
             <option value="Rain Forest">Rain Forest</option>
             <option value="Forest">Forest</option>
@@ -95,7 +96,7 @@
 
 
         <h3>Animal Group</h3>
-        <select id="animalGroup">
+        <select id="animalGroup" name="Animal Group">
             <option value="" disabled selected hidden>Select Animal Group</option>
             <option value="Mammal">Mammal</option>
             <option value="Invertebrate">Invertebrate</option>
@@ -105,7 +106,7 @@
         </select>
 
          <h3>Description</h3>
-         <textarea rows="4" cols="40" maxlength="150" id="description" placeholder="Describe the animal here..."></textarea>
+         <textarea rows="4" cols="40" maxlength="150" id="description" name="Description" placeholder="Describe the animal here..."></textarea>
 
         <input type="button" onclick="newCard()" value="Create Card">
 

@@ -11,5 +11,3 @@
 * Hover effects such as cursors and opacity changes 
 
 # Phase Three: Website Functionality
-* Enable "Edit" icon on cards
-* Enable "Delete" icon on cards
