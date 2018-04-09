@@ -9,6 +9,7 @@ var addCardModal = $("#cardMakePanel");
 var disableBackground = $("#disable-background");
 var addCardBtn = $("#add-card-btn");
 var addCardTopBtn = $('#add-card-top');
+var editingCard = false;
 
 // =====================================================================
 // 
@@ -16,9 +17,32 @@ var addCardTopBtn = $('#add-card-top');
 // 
 // =====================================================================
 
+//clear modal
+function resetModal() {
+  var cardMakePanel = document.getElementById('cardMakePanel'),
+      animalImage = document.getElementById('profile'),
+      listFacts = document.getElementsByClassName('title'),
+      habitat = document.getElementById('habitat'),
+      animalGroup = document.getElementById('animalGroup'),
+      desc = document.getElementById('description');
+    
+  for (let f = 0; f < listFacts.length; f++) {
+    let inputValue = listFacts[f].getElementsByTagName('input')[0];
+    inputValue.value = ''
+  }
+  
+  cardMakePanel.className = 'new-card-modal';
+  animalImage.src = 'http://www.dimakroma.com/nophoto.gif';
+  habitat.value = animalGroup.value = desc.value = '';
+  editingCard = false;
+}
+
 function toggleCardModal () {
   addCardModal.toggleClass("visible");
   disableBackground.toggleClass("visible");
+  
+  //reset modal when closed
+  if (!addCardModal[0].classList.contains('visible')) resetModal();
 }
 
 // Closing Modal
@@ -28,6 +52,11 @@ closeModal.click(toggleCardModal);
 addCardBtn.click(toggleCardModal);
 
 addCardTopBtn.click(toggleCardModal);
+
+//style card moduel as the user changes habitats
+$('#habitat').change(function () {
+    addCardModal[0].className = 'new-card-modal ' + this.options[habitat.selectedIndex].value.replace(' ', '') + 'Theme';
+});
 
 // =====================================================================
 // 
@@ -61,15 +90,39 @@ document.getElementById('image').addEventListener('change', readURL);
 // 
 // =====================================================================
 
-//style card moduel as the user hover overs habitats
-$('#habitat').change(function () {
-    addCardModal[0].className = 'new-card-modal ' + this.options[habitat.selectedIndex].value.replace(' ', '') + 'Theme';
-});
+function reEditCard (cardEl, cardInfo) {
+  var cardMakePanel = document.getElementById('cardMakePanel'),
+      animalImage = document.getElementById('profile'),
+      listFacts = document.getElementsByClassName('title');
+    
+  toggleCardModal();
+  
+  animalImage.src = cardInfo.animalImage;
+  
+  for (let f = 0; f < listFacts.length; f++) {
+    let inputValue = listFacts[f].getElementsByTagName('input')[0];
+    inputValue.value = cardInfo.facts[f][1]
+  }
+  
+  for (let d = 0; d < cardInfo.details.length; d++) {
+    let el = document.getElementsByName(cardInfo.details[d][0])[0];
+    el.value = cardInfo.details[d][1];
+    
+    if (cardInfo.details[d][0] == 'Habitat') {
+      cardMakePanel.className = 'new-card-modal ' + cardInfo.details[d][1] + 'Theme';
+    }
+  }
+
+  editingCard = cardEl;
+}
 
 //build basic HTML structure of card
 function buildCardHTML () {
   var container = document.createElement('div'),
       cardHeader = document.createElement('header'),
+      cardTools = document.createElement('div'),
+      editCard = document.createElement('span'),
+      deleteCard = document.createElement('span'),
       animalName = document.createElement('h2'),
       cardBody = document.createElement('div'),
       imageContainer = document.createElement('picture'),
@@ -82,6 +135,7 @@ function buildCardHTML () {
   //set classes      
   container.className = 'completedCard';
   cardHeader.className = 'cardHeader';
+  cardTools.className = 'cardTools';
   animalImage.className = 'cardImage';
   cardAnimalText.className = 'cardAnimalText';
   animialFacts.className = 'animialFacts';
@@ -89,12 +143,17 @@ function buildCardHTML () {
   
   //set text
   animalName.textContent = 'Aniaml name'
-  
+  editCard.textContent = 'mode_edit';
+  deleteCard.textContent = 'delete';
+      
   //set image attributes
   animalImage.src = 'http://www.dimakroma.com/nophoto.gif';
   animalImage.alt = 'animal-image';
     
+  cardTools.appendChild(editCard);
+  cardTools.appendChild(deleteCard);
   cardHeader.appendChild(animalName);
+  cardHeader.appendChild(cardTools);
   container.appendChild(cardHeader);
   imageContainer.appendChild(animalImage);
   container.appendChild(imageContainer);
@@ -110,7 +169,9 @@ function buildCardHTML () {
     animialFacts : animialFacts,
     animalDetails : animalDetails,
     animalName : animalName,
-    animalImage : animalImage
+    animalImage : animalImage,
+    editCard : editCard,
+    deleteCard : deleteCard
   };
 }
 
@@ -130,34 +191,32 @@ function getCardInfo () {
   
   for (let f = 0; f < listFacts.length; f++) {
     let inputValue = listFacts[f].getElementsByTagName('input')[0];
-    if (inputValue.name == 'Animal Name') {
-      cardInfo.animalName = inputValue.value;
-    } else {
-      cardInfo.facts.push([inputValue.name, inputValue.value]); 
-    }
-    inputValue.value = '';
+    cardInfo.facts.push([inputValue.name, inputValue.value]);
   }
-  
+      
   cardInfo.animalImage = animalImageSrc;
   cardInfo.details.push(['Habitat', habitat.options[habitat.selectedIndex].value]);
   cardInfo.details.push(['Animal Group', animalGroup.options[animalGroup.selectedIndex].value]);
   cardInfo.details.push(['Description', desc.value]);
-  
+    
   return cardInfo;
 }
 
 function fillOutCard (cardHTML, cardInfo) {
-  cardHTML.animalName.textContent = cardInfo.animalName;
   cardHTML.animalImage.src = cardInfo.animalImage;
   //append animal facts
   for (let i = 0; i < cardInfo.facts.length; i++) {
-    let li = document.createElement('li'),
-        factLabel = document.createElement('span');
-    
-    factLabel.className = 'facet-label';
-    factLabel.textContent = cardInfo.facts[i][0] + ': ' + cardInfo.facts[i][1];
-    li.appendChild(factLabel);
-    cardHTML.animialFacts.appendChild(li);
+    if (cardInfo.facts[i][0] === 'Animal Name') {
+        cardHTML.animalName.textContent = cardInfo.facts[i][1];
+    } else {
+      let li = document.createElement('li'),
+          factLabel = document.createElement('span');
+        
+      factLabel.className = 'fact-label ' + cardInfo.facts[i][0];
+      factLabel.textContent = cardInfo.facts[i][0] + ': ' + cardInfo.facts[i][1];
+      li.appendChild(factLabel);
+      cardHTML.animialFacts.appendChild(li);
+    }
   }
   
   //append animal details
@@ -173,18 +232,31 @@ function fillOutCard (cardHTML, cardInfo) {
     detailLabel.textContent = cardInfo.details[i][0];
     info.textContent = cardInfo.details[i][1];
     
+    section.className = cardInfo.details[i][0];
     section.appendChild(detailLabel);
     section.appendChild(info);
     cardHTML.animalDetails.appendChild(section);
   }
   
+  cardHTML.deleteCard.addEventListener('click', function () {
+    document.getElementById('cardHolder').removeChild(cardHTML.container);
+  });
+  
+  cardHTML.editCard.addEventListener('click', function () {
+    reEditCard(cardHTML.container, cardInfo);
+  });
+    
   return cardHTML
 }
 
 function newCard() {
-  var newCard = fillOutCard(buildCardHTML(), getCardInfo());
+  var newCard = fillOutCard(buildCardHTML(), getCardInfo()),
+      cardHolder = document.getElementById('cardHolder');
       
-  
-  document.getElementById('cardHolder').insertBefore(newCard.container, addCardBtn[0]);
+  if (editingCard) {
+      cardHolder.removeChild(editingCard);
+  }
+
+  cardHolder.insertBefore(newCard.container, addCardBtn[0]);
   toggleCardModal();
 }
