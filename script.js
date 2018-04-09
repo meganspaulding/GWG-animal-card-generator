@@ -206,15 +206,30 @@ function fillOutCard (cardHTML, cardInfo) {
   cardHTML.animalImage.src = cardInfo.animalImage;
   //append animal facts
   for (let i = 0; i < cardInfo.facts.length; i++) {
+    let sup = document.createElement('sup');
     if (cardInfo.facts[i][0] === 'Animal Name') {
         cardHTML.animalName.textContent = cardInfo.facts[i][1];
     } else {
       let li = document.createElement('li'),
-          factLabel = document.createElement('span');
-        
-      factLabel.className = 'fact-label ' + cardInfo.facts[i][0];
-      factLabel.textContent = cardInfo.facts[i][0] + ': ' + cardInfo.facts[i][1];
+          factName = document.createElement('span'),
+          factLabel = document.createElement('span'),
+          sup = document.createElement('sup');
+      
+      factName.className = 'fact-label ' + cardInfo.facts[i][0];
+      factName.textContent = cardInfo.facts[i][0];
+      factLabel.textContent = ': ' + cardInfo.facts[i][1];
+      
+      li.appendChild(factName);
       li.appendChild(factLabel);
+      
+      if (cardInfo.facts[i][0] == 'Average Length') {
+        sup.textContent = 'FT';
+        li.appendChild(sup);
+      } else if (cardInfo.facts[i][0] == 'Average Lifespan') {
+        sup.textContent = 'YR';
+        li.appendChild(sup);
+      }
+      
       cardHTML.animialFacts.appendChild(li);
     }
   }
