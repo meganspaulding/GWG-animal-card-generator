@@ -299,8 +299,16 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99cfd1', endColorstr='#057275', GradientType=1 );
 }
 
+.RainForestTheme .cardHeader h2 {
+  color: #307e80;
+}
+
 .RainForestTheme .animalDetails h3 {
     color: #C02b75;
+}
+
+.RainForestTheme {
+  color: #7965a1;
 }
 
 /* DESERT THEME */
@@ -319,8 +327,16 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f2321', endColorstr='#f7d265', GradientType=1 );
 }
 
+.DesertTheme .cardHeader h2 {
+  color: #BA682A;
+}
+
 .DesertTheme .animalDetails h3 {
-    color: #BA682A;
+    color: #eed25c;
+}
+
+.DesertTheme {
+  color: #ffffd8;
 }
 
 /*  FARM THEME */
@@ -337,9 +353,18 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1b712', endColorstr='#cab63e', GradientType=1 );
 }
 
+.FarmTheme .cardHeader h2 {
+  color: #D11F22;
+}
+
 .FarmTheme .animalDetails h3 {
     color: #89672C;
 }
+
+.FarmTheme {
+    color: #3E680A;
+}
+
 
 /* FOREST THEME */
 .ForestTheme {
@@ -355,8 +380,16 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8c1f', endColorstr='#c58a74', GradientType=1 );
 }
 
+.ForestTheme .cardHeader h2 {
+  color: #84543C;
+}
+
 .ForestTheme .animalDetails h3 {
     color: #BAD262;
+}
+
+.ForestTheme {
+  color: #515027;
 }
 
 /* FRESHWATER THEME */
@@ -371,8 +404,16 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72affe', endColorstr='#5dc0fc', GradientType=1 );
 }
 
+.FreshWaterTheme .cardHeader h2 {
+  color: #72CCC4;
+}
+
 .FreshWaterTheme .animalDetails h3 {
-    color: #D6A864;
+    color: #705938;
+}
+
+.FreshWaterTheme {
+  color: #082E63;
 }
 
 /* MARINE THEME */
@@ -387,8 +428,16 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e229e', endColorstr='#13767b', GradientType=1 );
 }
 
+.MarineTheme .cardHeader h2 {
+  color: #1CB7BF;
+}
+
 .MarineTheme .animalDetails h3 {
-    color: #F98267;
+  color: #F98267;
+}
+
+.MarineTheme {
+  color: #020419;
 }
 
 /* POLAR THEME */
@@ -403,8 +452,16 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c79c1', endColorstr='#fffdf9', GradientType=1 );
 }
 
+.PolarTheme .cardHeader h2 {
+  color: #005BB7;
+}
+
 .PolarTheme .animalDetails h3 {
     color: #E8E1D5;
+}
+
+.PolarTheme {
+  #31404C;
 }
 
 /* SAVANNAH THEME */
@@ -421,7 +478,14 @@ input[type="file"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e49634', endColorstr='#f5ce6e', GradientType=1 );
 }
 
+.SavannaTheme .cardHeader h2 {
+  color: #FFEFC6;
+}
+
 .SavannaTheme .animalDetails h3 {
     color: #5B769B;
 }
 
+.SavannaTheme {
+  #3A4656;
+}
